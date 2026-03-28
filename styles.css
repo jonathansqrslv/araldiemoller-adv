@@ -331,49 +331,16 @@ img {
 
 .office-placeholder {
   height: 721px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(24, 58, 74, 0.24)),
-    linear-gradient(145deg, #151618 0%, #26282c 100%);
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow);
 }
 
-.office-placeholder::before,
-.office-placeholder::after,
-.office-lines::before,
-.office-lines::after {
-  content: "";
-  position: absolute;
-  inset: auto;
-  background: rgba(255, 255, 255, 0.16);
-}
-
-.office-placeholder::before {
-  left: 12%;
-  top: 0;
-  width: 1px;
+.office-placeholder img {
+  display: block;
+  width: 100%;
   height: 100%;
-}
-
-.office-placeholder::after {
-  left: 32%;
-  top: 0;
-  width: 1px;
-  height: 100%;
-}
-
-.office-lines::before {
-  right: 14%;
-  top: 0;
-  width: 1px;
-  height: 100%;
-}
-
-.office-lines::after {
-  left: 0;
-  right: 0;
-  bottom: 18%;
-  height: 1px;
+  object-fit: cover;
 }
 
 .experience-badge {
