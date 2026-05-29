@@ -1,12 +1,2 @@
-# wrangler files
-.wrangler
-.dev.vars*
-!.dev.vars.example
-.env*
-!.env.example
-
-# dependencies
-node_modules
-
 # macOS
 .DS_Store
